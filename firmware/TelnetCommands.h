@@ -3,9 +3,7 @@
 #define __TELNET_TELNETCOMMANDS__
 
 namespace Telnet {
-#ifdef EOF
-#undef EOF
-#endif
+
 enum Codes {
 	cNULL = 0,		// No operation
 	LF = 10, 		// Line feed, Moves the printer to the next print line, keeping the same horizontal position.
@@ -48,6 +46,8 @@ enum Options {
 	TERMINAL_SPEED		= 32			// How fast should it send
 	// There are many others that are ignored
 };
+
+#undef EOF
 
 enum LineModeSubOptions {
 	MODE 		= 1,
