@@ -1,7 +1,8 @@
 
 #ifndef __COMMANDLINE_COMMANDLINEENGINE__
 #define __COMMANDLINE_COMMANDLINEENGINE__
-
+#undef min
+#undef max
 #include <vector>
 
 namespace CommandEngine {
